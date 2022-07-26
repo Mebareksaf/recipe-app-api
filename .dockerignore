@@ -15,4 +15,4 @@ app/*/*/*/__pycache__
 venv/m
 
 # Personal Docs
-github_actions.txt
+Docs/
