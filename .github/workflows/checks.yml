@@ -16,6 +16,6 @@ jobs:
       - name: Checkout            # 2nd step
         uses: actions/checkout@v2            # an action provided by github to check our code
       - name: Test                # 3rd Testing step
-        run: docker-compose run --rm app sh -c "python manage.py test"
+        run: docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py test"
       - name: Lint                # 4th step to Run Linting
         run: docker-compose run --rm app sh -c "flake8"
