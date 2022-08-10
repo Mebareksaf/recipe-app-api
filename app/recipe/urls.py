@@ -13,6 +13,7 @@ from recipe import views
 
 router = DefaultRouter()
 router.register('recipes', views.RecipeViewSets)
+router.register('tags', views.TagViewSet)
 
 # Name that is used in reverse
 app_name = 'recipe'
