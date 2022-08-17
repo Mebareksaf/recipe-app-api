@@ -14,6 +14,7 @@ from recipe import views
 router = DefaultRouter()
 router.register('recipes', views.RecipeViewSets)
 router.register('tags', views.TagViewSet)
+router.register('ingredients', views.IngredientViewSet)
 
 # Name that is used in reverse
 app_name = 'recipe'
